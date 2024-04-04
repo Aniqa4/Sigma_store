@@ -4,6 +4,11 @@ import { VscLocation } from "react-icons/vsc";
 import { FaFacebookF, FaTwitter, FaInstagram, FaVimeoV } from "react-icons/fa";
 import { FaArrowDownLong } from "react-icons/fa6";
 import { HiMiniPlusSmall } from "react-icons/hi2";
+import { IoSearchOutline } from "react-icons/io5";
+import { BsCart3 } from "react-icons/bs";
+import { FaRegUser } from "react-icons/fa";
+import { MdFavoriteBorder } from "react-icons/md";
+import NavbarButton from './NavbarButton';
 
 function Navbar() {
   return (
@@ -19,9 +24,9 @@ function Navbar() {
         <div className='container mx-auto flex justify-between text-white'>
           <div className='flex gap-5'>
             <p className='flex items-center'>
-              <span className='text-[#6f9a37] text-xl'><TiMail /></span>info12@example.com</p>
+              <span className='text-[#7BAE00] text-xl'><TiMail /></span>info12@example.com</p>
             <p className=' flex items-center'>
-              <span className='text-[#6f9a37] text-xl'  ><VscLocation /></span>California, TX 70240</p>
+              <span className='text-[#7BAE00] text-xl'  ><VscLocation /></span>California, TX 70240</p>
           </div>
           <div className='flex items-center gap-5'>
             <FaFacebookF />
@@ -29,7 +34,7 @@ function Navbar() {
             <FaInstagram />
             <FaVimeoV />
             <p className='ps-5 flex items-center gap-1'>English
-              <span className=' text-[#6f9a37] text-sm '><FaArrowDownLong /></span></p>
+              <span className=' text-[#7BAE00] text-sm '><FaArrowDownLong /></span></p>
           </div>
         </div>
       </div>
@@ -42,6 +47,12 @@ function Navbar() {
               <li className='flex items-center'>Home <span className='text-xl'><HiMiniPlusSmall /></span></li>
               <li className='flex items-center'>Shop <span className='text-xl'><HiMiniPlusSmall /></span></li>
             </ul>
+          </div>
+          <div className='flex gap-3'>
+            <NavbarButton icon={<BsCart3 />} quantity={2}/>
+            <NavbarButton icon={<MdFavoriteBorder />} quantity={2}/>
+            <NavbarButton icon={<IoSearchOutline />}/>
+            <NavbarButton icon={<FaRegUser />}/>
           </div>
         </div>
       </div>
