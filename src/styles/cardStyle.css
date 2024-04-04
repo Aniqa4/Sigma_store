@@ -1,0 +1,8 @@
+.rotate-image img{
+    transition: all .5s;
+}
+
+.rotate-image:hover img {
+    scale: 1.1;
+    rotate: 5deg;
+}

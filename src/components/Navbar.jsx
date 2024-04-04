@@ -43,9 +43,12 @@ function Navbar() {
         <div className=' container mx-auto flex justify-between'>
           <div className='flex gap-28 items-center'>
             <img src="/FoodStore.png" alt="logo" />
-            <ul className='flex gap-5 font-semibold'>
+            <ul className='flex gap-5 font-semibold text-[16px]'>
               <li className='flex items-center'>Home <span className='text-xl'><HiMiniPlusSmall /></span></li>
+              <li className='flex items-center'>Page <span className='text-xl'><HiMiniPlusSmall /></span></li>
               <li className='flex items-center'>Shop <span className='text-xl'><HiMiniPlusSmall /></span></li>
+              <li className='flex items-center'>Blog <span className='text-xl'><HiMiniPlusSmall /></span></li>
+              <li className='flex items-center'>Contact Us</li>
             </ul>
           </div>
           <div className='flex gap-3'>
