@@ -1,8 +1,35 @@
-.rotate-image img{
-    transition: all .5s;
+.rotate-image img {
+    transition: all .4s;
 }
 
 .rotate-image:hover img {
     scale: 1.1;
-    rotate: 5deg;
+    rotate: 3deg;
+}
+
+.add-to-cart {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.add-to-cart-effect:hover .add-to-cart {
+    opacity: 100%;
+    bottom: 35px;
+    transition: all .4s;
+}
+
+.view-button {
+    opacity: 0;
+    position: absolute;
+    right: 12px;
+    top: 100px;
+}
+
+.add-to-cart-effect:hover .view-button {
+    opacity: 100%;
+    top: 64px;
+    transition: all .4s;
 }
