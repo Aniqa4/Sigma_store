@@ -21,7 +21,7 @@ function Navbar() {
       </div>
       {/*------second layer-----*/}
       <div className=' py-2 bg-[#0B2B3C] border-t border-black'>
-        <div className='container mx-auto flex justify-between text-white'>
+        <div className='max-w-[65%] mx-auto flex justify-between text-white'>
           <div className='flex gap-5'>
             <p className='flex items-center'>
               <span className='text-[#7BAE00] text-xl'><TiMail /></span>info12@example.com</p>
@@ -40,7 +40,7 @@ function Navbar() {
       </div>
       {/*------3rd layer-----*/}
       <div className='bg-[#FFFFFF] py-8'>
-        <div className=' container mx-auto flex justify-between'>
+        <div className=' max-w-[65%] mx-auto flex justify-between'>
           <div className='flex gap-28 items-center'>
             <img src="/FoodStore.png" alt="logo" />
             <ul className='flex gap-5 font-semibold text-[16px]'>

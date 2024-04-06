@@ -6,7 +6,7 @@ import '../styles/cardStyle.css'
 
 function ProductCard() {
     return (
-        <div className='bg-[#FFFFFF] mx-auto p-5 border hover:border-[#7BAE00] relative rotate-image  add-to-cart-effect'>
+        <div className='bg-[#FFFFFF] p-5 border hover:border-[#7BAE00] relative rotate-image  add-to-cart-effect'>
             <div className='grid gap-5'>
                 <div className='relative'>
                     <img src="/product.png" alt="" />
