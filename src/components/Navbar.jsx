@@ -9,6 +9,7 @@ import { BsCart3 } from "react-icons/bs";
 import { FaRegUser } from "react-icons/fa";
 import { MdFavoriteBorder } from "react-icons/md";
 import NavbarButton from './NavbarButton';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -42,20 +43,20 @@ function Navbar() {
       <div className='bg-[#FFFFFF] py-8'>
         <div className=' max-w-[65%] mx-auto flex justify-between'>
           <div className='flex gap-28 items-center'>
-            <img src="/FoodStore.png" alt="logo" />
+            <Link to={'/'}><img src="/FoodStore.png" alt="logo" /></Link>
             <ul className='flex gap-5 font-semibold text-[16px]'>
-              <li className='flex items-center'>Home <span className='text-xl'><HiMiniPlusSmall /></span></li>
+              <li className='flex items-center'><Link to={'/'}>Home</Link> <span className='text-xl'><HiMiniPlusSmall /></span></li>
               <li className='flex items-center'>Page <span className='text-xl'><HiMiniPlusSmall /></span></li>
-              <li className='flex items-center'>Shop <span className='text-xl'><HiMiniPlusSmall /></span></li>
+              <li className='flex items-center'><Link to={'/shop'}>Shop</Link> <span className='text-xl'><HiMiniPlusSmall /></span></li>
               <li className='flex items-center'>Blog <span className='text-xl'><HiMiniPlusSmall /></span></li>
               <li className='flex items-center'>Contact Us</li>
             </ul>
           </div>
           <div className='flex gap-3'>
-            <NavbarButton icon={<BsCart3 />} quantity={2}/>
-            <NavbarButton icon={<MdFavoriteBorder />} quantity={2}/>
-            <NavbarButton icon={<IoSearchOutline />}/>
-            <NavbarButton icon={<FaRegUser />}/>
+            <NavbarButton icon={<BsCart3 />} quantity={2} />
+            <NavbarButton icon={<MdFavoriteBorder />} quantity={2} />
+            <NavbarButton icon={<IoSearchOutline />} />
+            <NavbarButton icon={<FaRegUser />} />
           </div>
         </div>
       </div>

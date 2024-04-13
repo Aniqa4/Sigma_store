@@ -13,7 +13,10 @@ function ShopNow() {
                     <p className=' text-[#b5b5b5] text-2xl'>Free on all your order, Free Shipping and 30 days mony back guarantee</p>
                     <div>
                         <Link to={'/shop'}>
-                            <button className=' bg-[#7BAE00] font-semibold px-7 py-3 rounded-full flex items-center gap-3'>SHOP NOW<HiArrowSmallRight /></button>
+                            <button
+                                className=' bg-[#7BAE00] font-semibold px-7 py-3 rounded-full flex items-center gap-3
+                                transition-all duration-500 hover:bg-[#0B2B3C]'>
+                                SHOP NOW<HiArrowSmallRight /></button>
                         </Link>
                     </div>
                 </div>

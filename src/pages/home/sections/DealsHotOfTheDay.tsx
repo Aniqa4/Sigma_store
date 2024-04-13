@@ -69,7 +69,8 @@ function DealsHotOfTheDay() {
                                 <FaPlus />
                             </label>
                         </form>
-                        <button className='flex items-center gap-2 text-xs font-semibold bg-[#7BAE00] px-5 text-white'>
+                        <button className='flex items-center gap-2 text-xs font-semibold bg-[#7BAE00] px-5 text-white 
+                        transition-all duration-500 hover:bg-[#0B2B3C]'>
                             <FaShoppingCart />ADD TO CART
                         </button>
                     </div>
