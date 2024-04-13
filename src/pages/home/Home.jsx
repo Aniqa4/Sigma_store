@@ -4,6 +4,7 @@ import Features from './sections/Features'
 import Banner2 from './sections/Banner2'
 import PopularProducts from './sections/PopularProducts'
 import DealsHotOfTheDay from './sections/DealsHotOfTheDay'
+import ShopNow from './sections/ShopNow'
 
 function Home() {
   return (
@@ -11,8 +12,9 @@ function Home() {
       <HeroSection />
       <Features />
       <Banner2 />
-      <PopularProducts/>
-      <DealsHotOfTheDay/>
+      <PopularProducts />
+      <DealsHotOfTheDay />
+      <ShopNow />
     </div>
   )
 }
