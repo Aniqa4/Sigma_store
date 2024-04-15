@@ -6,6 +6,7 @@ import PopularProducts from './sections/PopularProducts'
 import DealsHotOfTheDay from './sections/DealsHotOfTheDay'
 import ShopNow from './sections/ShopNow'
 import HotDeals from './sections/HotDeals'
+import FeaturedProducts from './sections/FeaturedProducts'
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
       <DealsHotOfTheDay />
       <ShopNow />
       <HotDeals />
+      <FeaturedProducts />
     </div>
   )
 }
