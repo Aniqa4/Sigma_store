@@ -1,0 +1,16 @@
+.card-style img {
+    transition: all 500ms;
+}
+
+.card-style:hover img {
+    border-color: #7bae00;
+}
+
+.card-style .product-name {
+    transition: all 500ms;
+}
+
+.card-style:hover .product-name {
+    color: #7bae00;
+    font-weight: 600px;
+}

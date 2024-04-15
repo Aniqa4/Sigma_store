@@ -5,6 +5,7 @@ import Banner2 from './sections/Banner2'
 import PopularProducts from './sections/PopularProducts'
 import DealsHotOfTheDay from './sections/DealsHotOfTheDay'
 import ShopNow from './sections/ShopNow'
+import HotDeals from './sections/HotDeals'
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <PopularProducts />
       <DealsHotOfTheDay />
       <ShopNow />
+      <HotDeals />
     </div>
   )
 }
