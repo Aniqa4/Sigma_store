@@ -8,6 +8,7 @@ import ShopNow from './sections/ShopNow'
 import HotDeals from './sections/HotDeals'
 import FeaturedProducts from './sections/FeaturedProducts'
 import MakeACall from './sections/MakeACall'
+import BlogsAndNews from './sections/BlogsAndNews'
 
 function Home() {
   return (
@@ -23,6 +24,9 @@ function Home() {
         <FeaturedProducts />
       </div>
       <MakeACall />
+      <div className='max-w-[65%] mx-auto'>
+        <BlogsAndNews />
+      </div>
     </div>
   )
 }

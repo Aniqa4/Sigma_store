@@ -1,0 +1,8 @@
+.blog-image {
+    transition: all .5s;
+}
+
+.rotate-blog-image:hover .blog-image {
+    scale: 1.1;
+    rotate: 5deg
+}
