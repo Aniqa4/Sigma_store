@@ -7,7 +7,7 @@ function Layout() {
         <div className='text-[#0B2B3C]'>
             <Navbar />
             <div className='bg-[#F2F3F9]'>
-                <div className='bg-[#F2F3F9] max-w-[65%] mx-auto'>
+                <div className='bg-[#F2F3F9]'>
                     <Outlet />
                 </div>
             </div>
