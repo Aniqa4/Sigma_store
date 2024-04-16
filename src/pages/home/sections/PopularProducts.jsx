@@ -8,7 +8,8 @@ function PopularProducts() {
             <div className='flex justify-between items-center py-5'>
                 <h1 className=' text-2xl font-bold'>Popular Products</h1>
                 <button
-                    className=' uppercase font-semibold text-white bg-[#7BAE00] px-5 py-4 flex items-center gap-2'>View all
+                    className=' uppercase font-semibold text-white bg-[#7BAE00] px-5 py-4 flex items-center gap-2
+                    transition-all duration-500 hover:bg-[#0B2B3C]'>View all
                     <span className=' font-bold'><HiArrowLongRight /></span>
                 </button>
             </div>
