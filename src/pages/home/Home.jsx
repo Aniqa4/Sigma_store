@@ -9,6 +9,7 @@ import HotDeals from './sections/HotDeals'
 import FeaturedProducts from './sections/FeaturedProducts'
 import MakeACall from './sections/MakeACall'
 import BlogsAndNews from './sections/BlogsAndNews'
+import Reviews from './sections/Reviews'
 
 function Home() {
   return (
@@ -26,6 +27,7 @@ function Home() {
       <MakeACall />
       <div className='max-w-[65%] mx-auto'>
         <BlogsAndNews />
+        <Reviews/>
       </div>
     </div>
   )
