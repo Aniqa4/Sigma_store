@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 function Shop() {
   return (
     <div>
+      {/* -----------------banner------------- */}
       <div className='relative'>
         <img src="/shop.jpg" alt="" className='w-full' />
         <div className=' bg-[#000000bf] absolute top-0 left-0 bottom-0 right-0 '>
@@ -14,12 +15,14 @@ function Shop() {
               <div className='flex gap-2 items-center font-semibold'>
                 <Link to={'/'}>Home</Link>
                 <span className=' text-xl'><BsDot /></span>
-                <p className='text-[#666]'>Shop</p>
+                <p className='text-[#ccc]'>Shop</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+      {/* -----------------banner------------- */}
+      
     </div>
   )
 }
