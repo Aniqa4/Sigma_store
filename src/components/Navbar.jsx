@@ -15,13 +15,13 @@ function Navbar() {
   return (
     <div>
       {/*------first layer-----*/}
-      <div className='bg-[#262626] px-5 py-3 flex justify-between'>
+      {/* <div className='bg-[#262626] px-5 py-3 flex justify-between'>
         <p className='text-2xl font-semibold text-white'>evanto
           <span className='text-[#6f9a37] font-normal'>market</span></p>
         <button className='text-white px-5 py-1 bg-[#6f9a37] rounded text-sm'>Buy now</button>
-      </div>
+      </div> */}
       {/*------second layer-----*/}
-      <div className=' py-2 bg-[#0B2B3C] border-t border-black'>
+      {/* <div className=' py-2 bg-[#0B2B3C] border-t border-black'>
         <div className='max-w-[65%] mx-auto flex justify-between text-white'>
           <div className='flex gap-5'>
             <p className='flex items-center'>
@@ -38,13 +38,13 @@ function Navbar() {
               <span className=' text-[#7BAE00] text-sm '><FaArrowDownLong /></span></p>
           </div>
         </div>
-      </div>
+      </div> */}
       {/*------3rd layer-----*/}
-      <div className='bg-[#FFFFFF] py-8'>
-        <div className=' max-w-[65%] mx-auto flex justify-between'>
-          <div className='flex gap-28 items-center'>
-            <Link to={'/'}><img src="/FoodStore.png" alt="logo" /></Link>
-            <ul className='flex gap-5 font-semibold text-[16px]'>
+      <div className='bg-[#FFFFFF] py-5 md:py-8'>
+        <div className='md:max-w-[65%] md:mx-auto grid grid-cols-1 gap-5 justify-center md:flex md:justify-between'>
+          <div className='md:flex md:gap-28 md:items-center'>
+            <Link to={'/'}><img src="/FoodStore.png" alt="logo" className='mx-auto'/></Link>
+            <ul className='hidden md:flex gap-5 font-semibold text-[16px]'>
               <li className='flex items-center'><Link to={'/'}>Home</Link> <span className='text-xl'><HiMiniPlusSmall /></span></li>
               <li className='flex items-center'>Page <span className='text-xl'><HiMiniPlusSmall /></span></li>
               <li className='flex items-center'><Link to={'/shop'}>Shop</Link> <span className='text-xl'><HiMiniPlusSmall /></span></li>
@@ -52,7 +52,7 @@ function Navbar() {
               <li className='flex items-center'>Contact Us</li>
             </ul>
           </div>
-          <div className='flex gap-3'>
+          <div className='flex gap-3 mx-auto'>
             <NavbarButton icon={<BsCart3 />} quantity={2} />
             <NavbarButton icon={<MdFavoriteBorder />} quantity={2} />
             <NavbarButton icon={<IoSearchOutline />} />

@@ -9,7 +9,7 @@ function HeroSection() {
 
     return (
         <div className=' pt-10 flex gap-7'>
-            <div className=' text-[16px] w-[25%] z-10'>
+            <div className=' hidden md:block text-[16px] w-[25%] z-10'>
                 <h2 className=' bg-[#7BAE00] rounded-t px-5 py-2 text-white uppercase font-semibold'>All categories</h2>
                 <div>
                     <div className='bg-white rounded-b h-[450px]'>

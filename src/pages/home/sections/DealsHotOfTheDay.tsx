@@ -15,7 +15,7 @@ function DealsHotOfTheDay() {
                     <p><HiArrowLongRight /></p>
                 </div>
             </div>
-            <div className='flex gap-10 p-5'>
+            <div className='md:flex gap-10 p-5'>
                 <img src="/product.png" alt="" />
                 <div className='grid gap-5'>
                     <div className='flex gap-3'>

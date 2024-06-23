@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function HotDeals() {
     return (
-        <div className='grid grid-cols-4 gap-10'>
+        <div className='grid md:grid-cols-4 gap-10'>
             <div className=' p-5 bg-white border transition-all duration-500 hover:border-[#7BAE00]'>
                 <h1 className='border-b pb-2 font-semibold text-xl'>Hot Deals</h1>
                 <div className='py-2 grid gap-2'>

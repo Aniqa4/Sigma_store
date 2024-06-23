@@ -14,7 +14,7 @@ import Reviews from './sections/Reviews'
 function Home() {
   return (
     <div>
-      <div className='max-w-[65%] mx-auto'>
+      <div className='md:max-w-[65%] md:mx-auto mx-3'>
         <HeroSection />
         <Features />
         <Banner2 />
@@ -25,7 +25,7 @@ function Home() {
         <FeaturedProducts />
       </div>
       <MakeACall />
-      <div className='max-w-[65%] mx-auto'>
+      <div className='md:max-w-[65%] md:mx-auto mx-3'>
         <BlogsAndNews />
         <Reviews/>
       </div>
