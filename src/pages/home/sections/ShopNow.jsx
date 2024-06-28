@@ -3,6 +3,7 @@ import { HiArrowSmallRight } from "react-icons/hi2";
 import { Link } from 'react-router-dom';
 
 function ShopNow() {
+    
     return (
         <div className='my-10 relative'>
             <img src="/banner2.jpg" alt="" className='w-full rounded-3xl h-[350px]' />
