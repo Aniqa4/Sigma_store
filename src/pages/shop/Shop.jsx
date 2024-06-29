@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { CgMenuGridR } from "react-icons/cg";
 import { TfiMenuAlt } from "react-icons/tfi";
 import ProductCard from '../../components/ProductCard';
+import { BiSolidRectangle } from "react-icons/bi";
 
 function Shop() {
   return (
@@ -24,9 +25,10 @@ function Shop() {
           </div>
         </div>
       </div>
-      {/* -----------------banner------------- */}
-      <div className='md:max-w-[65%] md:mx-auto mx-3 py-20'>
-        <div>
+      {/* -----------------Main------------- */}
+      <div className='md:max-w-[65%] md:mx-auto mx-3 py-20 flex gap-5'>
+        {/** --------------left side------------- */}
+        <aside>
           <div className='flex justify-between items-center'>
             <div className=' text-[#555] flex items-center gap-5'>
               <div className=' text-[26px]'>
@@ -45,7 +47,7 @@ function Shop() {
           </div>
           <div>
             <div className='grid md:grid-cols-3 gap-5 py-5'>
-              <ProductCard/>
+              <ProductCard />
               <ProductCard />
               <ProductCard />
               <ProductCard />
@@ -53,10 +55,43 @@ function Shop() {
               <ProductCard />
             </div>
           </div>
-        </div>
-        <div>
+        </aside>
+        {/** --------------right side------------- */}
+        <aside className=' flex-col'>
+          <form action="" className='bg-white border py-5 pe-7 mb-5'>
+            <label htmlFor="" className='flex gap-5 items-center justify-start'><BiSolidRectangle />
+              <span className=' font-semibold text-xl'>Search</span></label>
+            <input type="text" placeholder='Search Here...' className='border ms-9 mt-3 px-5 py-3' />
+          </form>
+          <div className='bg-white border py-5 pe-7 mb-5'>
+            <p htmlFor="" className='flex gap-5 items-center justify-start'><BiSolidRectangle />
+              <span className='font-semibold text-xl'>Categories</span></p>
+            <div className='ms-9'>
 
-        </div>
+            </div>
+          </div>
+          <div className='bg-white border py-5 pe-7 mb-5'>
+            <p htmlFor="" className='flex gap-5 items-center justify-start'><BiSolidRectangle />
+              <span className='font-semibold text-xl'>Popular products</span></p>
+            <div className='ms-9'>
+
+            </div>
+          </div>
+          <div className='bg-white border py-5 pe-7 mb-5'>
+            <p htmlFor="" className='flex gap-5 items-center justify-start'><BiSolidRectangle />
+              <span className='font-semibold text-xl'>Tags</span></p>
+            <div className='ms-9'>
+
+            </div>
+          </div>
+          <div className='bg-white border py-5 pe-7 mb-5'>
+            <p htmlFor="" className='flex gap-5 items-center justify-start'><BiSolidRectangle />
+              <span className='font-semibold text-xl'>Archives</span></p>
+            <div className='ms-9'>
+
+            </div>
+          </div>
+        </aside>
       </div>
     </div>
   )
