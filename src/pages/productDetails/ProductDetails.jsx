@@ -37,7 +37,7 @@ function ProductDetails() {
                 <div className=' p-4 bg-white border'>
                     <div className='md:grid grid-cols-2 gap-10 p-5'>
                         <div className='grid grid-cols-1 items-end'>
-                            <img src="/product.png" alt="" className='mx-auto my-auto border' />
+                            <img src="/product.png" alt="" className='mx-auto my-auto' />
                             <div className='flex gap-3 overflow-y-auto overflow-hidden'>
                                 <img src="/product.png" alt="" className=' border w-36 h-36' />
                                 <img src="/product.png" alt="" className=' border w-36 h-36' />

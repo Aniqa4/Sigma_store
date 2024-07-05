@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { TiMail } from "react-icons/ti";
 import { VscLocation } from "react-icons/vsc";
 import { FaFacebookF, FaTwitter, FaInstagram, FaVimeoV } from "react-icons/fa";
@@ -10,8 +10,10 @@ import { FaRegUser } from "react-icons/fa";
 import { MdFavoriteBorder } from "react-icons/md";
 import NavbarButton from './NavbarButton';
 import { Link } from 'react-router-dom';
+import Cart from './Cart';
 
 function Navbar() {
+  const [showCart, setShowCart] = useState(false)
   return (
     <div>
       {/*------first layer-----*/}
@@ -40,10 +42,13 @@ function Navbar() {
         </div>
       </div> */}
       {/*------3rd layer-----*/}
+        {
+          showCart && <Cart close={()=>setShowCart(false)}/>
+        }
       <div className='bg-[#FFFFFF] py-5 md:py-8'>
         <div className='md:max-w-[65%] md:mx-auto grid grid-cols-1 gap-5 justify-center md:flex md:justify-between'>
           <div className='md:flex md:gap-28 md:items-center'>
-            <Link to={'/'}><img src="/FoodStore.png" alt="logo" className='mx-auto'/></Link>
+            <Link to={'/'}><img src="/FoodStore.png" alt="logo" className='mx-auto' /></Link>
             <ul className='hidden md:flex gap-5 font-semibold text-[16px]'>
               <li className='flex items-center'><Link to={'/'}>Home</Link> <span className='text-xl'><HiMiniPlusSmall /></span></li>
               <li className='flex items-center'>Page <span className='text-xl'><HiMiniPlusSmall /></span></li>
@@ -52,9 +57,11 @@ function Navbar() {
               <li className='flex items-center'>Contact Us</li>
             </ul>
           </div>
-          <div className='flex gap-3 mx-auto'>
-            <NavbarButton icon={<BsCart3 />} quantity={2} />
-            <NavbarButton icon={<MdFavoriteBorder />} quantity={2} />
+          <div className='flex gap-3'>
+            <div onClick={() => setShowCart(true)}>
+              <NavbarButton icon={<BsCart3 />} quantity={2} />
+            </div>
+            {/*  <NavbarButton icon={<MdFavoriteBorder />} quantity={2} /> */}
             <NavbarButton icon={<IoSearchOutline />} />
             <NavbarButton icon={<FaRegUser />} />
           </div>
