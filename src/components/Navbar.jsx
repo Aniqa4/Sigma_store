@@ -10,7 +10,7 @@ import { FaRegUser } from "react-icons/fa";
 import { MdFavoriteBorder } from "react-icons/md";
 import NavbarButton from './NavbarButton';
 import { Link } from 'react-router-dom';
-import Cart from './Cart';
+import CartSidebar from './CartSidebar';
 
 function Navbar() {
   const [showCart, setShowCart] = useState(false)
@@ -43,7 +43,7 @@ function Navbar() {
       </div> */}
       {/*------3rd layer-----*/}
         {
-          showCart && <Cart close={()=>setShowCart(false)}/>
+          showCart && <CartSidebar close={()=>setShowCart(false)}/>
         }
       <div className='bg-[#FFFFFF] py-5 md:py-8'>
         <div className='md:max-w-[65%] md:mx-auto grid grid-cols-1 gap-5 justify-center md:flex md:justify-between'>

@@ -2,13 +2,19 @@ import React from 'react'
 import { RxCross1 } from "react-icons/rx";
 import { Link } from 'react-router-dom';
 
-function Cart({ close }) {
+function CartSidebar({ close }) {
+    const handleOverlayClick = (e) => {
+        if (e.target === e.currentTarget) {
+            close();
+        }
+    };
     return (
-        <div className=' bg-[#0000004c] h-screen z-20 fixed top-0 right-0 left-0 bottom-0'>
+        <div onClick={handleOverlayClick}
+            className=' bg-[#0000004c] h-screen z-20 fixed top-0 right-0 left-0 bottom-0'>
             <div className='fixed right-0 bg-white bottom-0 top-0 w-[20%]'>
                 <div className='text-xl p-5 border-b-2 uppercase font-semibold flex justify-between items-center'>
                     <h2 >Shopping cart</h2>
-                    <span onClick={close}>
+                    <span onClick={close} className=' transition-all hover:rotate-45 ease-in delay-500'>
                         <RxCross1 />
                     </span>
                 </div>
@@ -31,14 +37,16 @@ function Cart({ close }) {
                         className=' uppercase font-semibold text-[#0B2B3C] border border-[#0B2B3C] px-5 py-4
                          transition-all duration-500 hover:bg-[#0B2B3C] hover:text-white'>View Cart
                     </button>
-                    <button
-                        className=' uppercase font-semibold text-white bg-[#7BAE00] px-5 py-4
+                    <Link to={'/checkout'}>
+                        <button onClick={close}
+                            className=' w-full uppercase font-semibold text-white bg-[#7BAE00] px-5 py-4
                          transition-all duration-500 hover:bg-[#0B2B3C]'>checkout now
-                    </button>
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>
     )
 }
 
-export default Cart
+export default CartSidebar

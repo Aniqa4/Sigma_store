@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import '../../../styles/slider.css'
+import React, { useEffect, useState } from 'react'  
 import { HiArrowLongRight } from "react-icons/hi2";
 import { GoDotFill } from "react-icons/go";
 
