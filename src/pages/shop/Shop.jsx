@@ -1,6 +1,4 @@
 import React from 'react'
-import { BsDot } from "react-icons/bs";
-import { Link } from 'react-router-dom';
 import { CgMenuGridR } from "react-icons/cg";
 import { TfiMenuAlt } from "react-icons/tfi";
 import ProductCard from '../../components/ProductCard';
