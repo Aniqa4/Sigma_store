@@ -14,6 +14,7 @@ import CartSidebar from './CartSidebar';
 
 function Navbar() {
   const [showCart, setShowCart] = useState(false)
+  
   return (
     <div>
       {/*------first layer-----*/}
@@ -63,7 +64,7 @@ function Navbar() {
             </div>
             {/*  <NavbarButton icon={<MdFavoriteBorder />} quantity={2} /> */}
             <NavbarButton icon={<IoSearchOutline />} />
-            <NavbarButton icon={<FaRegUser />} />
+            <Link to='/login'><NavbarButton icon={<FaRegUser />} /></Link>
           </div>
         </div>
       </div>
