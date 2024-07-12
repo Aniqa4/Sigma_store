@@ -13,9 +13,9 @@ function HeroSection() {
                 <h2 className=' bg-[#7BAE00] rounded-t px-5 py-2 text-white uppercase font-semibold'>All categories</h2>
                 <div>
                     <div className='bg-white rounded-b h-[450px]'>
-                        <div className=' relative'>
+                        <div className=' relative' onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
                             <div className='py-3 px-5 border-b hover:text-[#7BAE00] transition-all duration-500 flex items-center justify-between'
-                                onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
+                            >
                                 <a href="#">Vegetables And Fruits </a><MdArrowForwardIos />
                             </div>
                             {
@@ -29,9 +29,9 @@ function HeroSection() {
                                 </div>
                             }
                         </div>
-                        <div className=' relative'>
+                        <div className=' relative' onMouseEnter={() => setOpen2(true)} onMouseLeave={() => setOpen2(false)}>
                             <div className='py-3 px-5 border-b hover:text-[#7BAE00] transition-all duration-500 flex items-center justify-between'
-                                onMouseEnter={() => setOpen2(true)} onMouseLeave={() => setOpen2(false)}>
+                            >
                                 <a href="#">Vegetables And Fruits </a><MdArrowForwardIos />
                             </div>
                             {
@@ -45,9 +45,9 @@ function HeroSection() {
                                 </div>
                             }
                         </div>
-                        <div className=' relative'>
+                        <div className=' relative' onMouseEnter={() => setOpen3(true)} onMouseLeave={() => setOpen3(false)}>
                             <div className='py-3 px-5 border-b hover:text-[#7BAE00] transition-all duration-500 flex items-center justify-between'
-                                onMouseEnter={() => setOpen3(true)} onMouseLeave={() => setOpen3(false)}>
+                            >
                                 <a href="#">Vegetables And Fruits </a><MdArrowForwardIos />
                             </div>
                             {

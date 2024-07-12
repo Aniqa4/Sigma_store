@@ -47,11 +47,11 @@ function Navbar() {
       {
         showCart && <CartSidebar close={() => setShowCart(false)} />
       }
-      <div className='bg-[#FFFFFF] py-5 md:py-8'>
-        <div className='md:max-w-[65%] md:mx-auto grid grid-cols-1 gap-5 justify-center md:flex md:justify-between'>
+      <div className='bg-[#FFFFFF] py-3 md:py-5'>
+        <div className='md:max-w-[65%] mx-auto grid grid-cols-1 gap-3 md:gap-5 justify-center md:flex md:justify-between'>
           <div className='md:flex md:gap-28 md:items-center'>
             <Link to={'/'}>
-              <div className='uppercase flex'>
+              <div className='uppercase flex justify-center'>
                 <span className='text-5xl'> <TiShoppingCart /></span>
                 <div className=' relative'>
                   <p className=' text-xl font-extrabold'>Sigma</p>
@@ -67,7 +67,7 @@ function Navbar() {
               <li className='flex items-center'>Contact Us</li>
             </ul>
           </div>
-          <div className='flex gap-3'>
+          <div className='flex justify-center gap-3'>
             <div onClick={() => setShowCart(true)}>
               <NavbarButton icon={<BsCart3 />} quantity={2} />
             </div>
