@@ -26,8 +26,11 @@ function Home() {
       </div>
       <MakeACall />
       <div className='md:max-w-[65%] md:mx-auto mx-3'>
-        <BlogsAndNews />
-        <Reviews/>
+        {/*  <BlogsAndNews />
+        <Reviews/> */}
+        <FeaturedProducts />
+        <FeaturedProducts />
+        <FeaturedProducts />
       </div>
     </div>
   )

@@ -11,10 +11,11 @@ import { MdFavoriteBorder } from "react-icons/md";
 import NavbarButton from './NavbarButton';
 import { Link } from 'react-router-dom';
 import CartSidebar from './CartSidebar';
+import { TiShoppingCart } from "react-icons/ti";
 
 function Navbar() {
   const [showCart, setShowCart] = useState(false)
-  
+
   return (
     <div>
       {/*------first layer-----*/}
@@ -43,13 +44,21 @@ function Navbar() {
         </div>
       </div> */}
       {/*------3rd layer-----*/}
-        {
-          showCart && <CartSidebar close={()=>setShowCart(false)}/>
-        }
+      {
+        showCart && <CartSidebar close={() => setShowCart(false)} />
+      }
       <div className='bg-[#FFFFFF] py-5 md:py-8'>
         <div className='md:max-w-[65%] md:mx-auto grid grid-cols-1 gap-5 justify-center md:flex md:justify-between'>
           <div className='md:flex md:gap-28 md:items-center'>
-            <Link to={'/'}><img src="/FoodStore.png" alt="logo" className='mx-auto' /></Link>
+            <Link to={'/'}>
+              <div className='uppercase flex'>
+                <span className='text-5xl'> <TiShoppingCart /></span>
+                <div className=' relative'>
+                  <p className=' text-xl font-extrabold'>Sigma</p>
+                  <p className=' absolute bottom-1 text-sm font-extrabold'>Store</p>
+                </div>
+              </div>
+            </Link>
             <ul className='hidden md:flex gap-5 font-semibold text-[16px]'>
               <li className='flex items-center'><Link to={'/'}>Home</Link> <span className='text-xl'><HiMiniPlusSmall /></span></li>
               <li className='flex items-center'>Page <span className='text-xl'><HiMiniPlusSmall /></span></li>
