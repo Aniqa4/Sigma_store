@@ -20,7 +20,7 @@ function Home() {
         <Banner2 />
         <PopularProducts />
         {/* <DealsHotOfTheDay /> */}
-        <ShopNow />
+        {/* <ShopNow /> */}
         <HotDeals />
         <FeaturedProducts />
       </div>

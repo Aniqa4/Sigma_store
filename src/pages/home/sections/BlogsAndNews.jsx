@@ -8,7 +8,7 @@ function BlogsAndNews() {
     return (
         <div className='py-10'>
             <SectionTitle title={"Latest Blog & News"} />
-            <div className='grid md:grid-cols-3 gap-5 py-5'>
+            <div className='grid lg:grid-cols-3 gap-5 py-5'>
                 <div className='rotate-blog-image'>
                     <div className=' relative '>
                         <div className=' overflow-hidden'>

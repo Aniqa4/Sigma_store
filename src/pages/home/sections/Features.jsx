@@ -4,7 +4,7 @@ import { MdOutlineLocalShipping } from "react-icons/md";
 
 function Features() {
   return (
-    <div className=' bg-white grid gap-5 p-5 md:flex justify-between md:gap-10 md:p-10 my-10'>
+    <div className=' bg-white grid gap-5 p-5 lg:flex justify-between md:gap-10 md:p-10 my-10'>
       <FeatureCard
         icon={<MdOutlineLocalShipping />}
         title={'Free Shipping'}

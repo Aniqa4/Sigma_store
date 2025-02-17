@@ -5,7 +5,7 @@ function Reviews() {
     return (
         <div className='pb-10'>
             <h2 className='text-2xl font-bold'>Our Awesome Testimonial</h2>
-            <div className='grid md:grid-cols-2 gap-5 py-5'>
+            <div className='grid lg:grid-cols-2 gap-5 py-5'>
                 <div className=' border p-10 bg-white'>
                     <div>
                         <div className='flex justify-between items-start'>
