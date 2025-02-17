@@ -2,10 +2,43 @@ import React, { useState } from 'react'
 import { MdArrowForwardIos } from "react-icons/md";
 import Slider from './Slider';
 
+const categories = [
+    {
+        id: 1,
+        name: "Vegetables And Fruits",
+        subcategories: [
+            { id: 101, name: "Tomato" },
+            { id: 102, name: "Banana" },
+            { id: 103, name: "Carrot" }
+        ]
+    },
+    {
+        id: 2,
+        name: "Dairy Products",
+        subcategories: [
+            { id: 201, name: "Milk" },
+            { id: 202, name: "Cheese" },
+            { id: 203, name: "Butter" }
+        ]
+    },
+    {
+        id: 3,
+        name: "Beverages",
+        subcategories: [
+            { id: 301, name: "Tea" },
+            { id: 302, name: "Coffee" },
+            { id: 303, name: "Juices" }
+        ]
+    },
+    { id: 4, name: "Bakery Items", subcategories: [] },
+    { id: 5, name: "Frozen Foods", subcategories: [] },
+    { id: 6, name: "Snacks", subcategories: [] },
+    { id: 7, name: "Household Items", subcategories: [] }
+];
+
+
 function HeroSection() {
-    const [open, setOpen] = useState(false)
-    const [open2, setOpen2] = useState(false)
-    const [open3, setOpen3] = useState(false)
+    const [open, setOpen] = useState(0)
 
     return (
         <div className=' pt-10 flex gap-7'>
@@ -13,66 +46,30 @@ function HeroSection() {
                 <h2 className=' bg-[#7BAE00] rounded-t px-5 py-2 text-white uppercase font-semibold'>All categories</h2>
                 <div>
                     <div className='bg-white rounded-b h-[450px]'>
-                        <div className=' relative' onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
-                            <div className='py-3 px-5 border-b hover:text-[#7BAE00] transition-all duration-500 flex items-center justify-between'
-                            >
-                                <a href="#">Vegetables And Fruits </a><MdArrowForwardIos />
-                            </div>
-                            {
-                                open &&
-                                <div className=' absolute -right-[240px] top-0 bg-white shadow w-60'>
-                                    <ul>
-                                        <li className='py-3 px-5 border-b'>Cross Body</li>
-                                        <li className='py-3 px-5 border-b'>Cross Body</li>
-                                        <li className='py-3 px-5 border-b'>Cross Body</li>
-                                    </ul>
+                        {
+                            categories.map((category, index) =>
+                                <div key={index}
+                                    className=' relative'
+                                    onMouseEnter={() => setOpen(category.id)}
+                                    onMouseLeave={() => setOpen(0)}>
+                                    <div className='py-3 px-5 border-b hover:text-[#7BAE00] transition-all duration-500 flex items-center justify-between'
+                                    >
+                                        <a href="#">{category.name}</a>{category?.subcategories.length > 0 && <MdArrowForwardIos />}
+                                    </div>
+                                    {
+                                        open === category.id &&
+                                        <div className=' absolute -right-[240px] top-0 bg-white shadow w-60'>
+                                            <ul>
+                                                {
+                                                    category.subcategories.map(x => <li key={x.id} className='py-3 px-5 border-b'>{x.name}</li>)
+                                                }
+                                            </ul>
+                                        </div>
+                                    }
                                 </div>
-                            }
-                        </div>
-                        <div className=' relative' onMouseEnter={() => setOpen2(true)} onMouseLeave={() => setOpen2(false)}>
-                            <div className='py-3 px-5 border-b hover:text-[#7BAE00] transition-all duration-500 flex items-center justify-between'
-                            >
-                                <a href="#">Vegetables And Fruits </a><MdArrowForwardIos />
-                            </div>
-                            {
-                                open2 &&
-                                <div className=' absolute -right-[240px] top-0 bg-white shadow w-60'>
-                                    <ul>
-                                        <li className='py-3 px-5 border-b'>Cross Body</li>
-                                        <li className='py-3 px-5 border-b'>Cross Body</li>
-                                        <li className='py-3 px-5 border-b'>Cross Body</li>
-                                    </ul>
-                                </div>
-                            }
-                        </div>
-                        <div className=' relative' onMouseEnter={() => setOpen3(true)} onMouseLeave={() => setOpen3(false)}>
-                            <div className='py-3 px-5 border-b hover:text-[#7BAE00] transition-all duration-500 flex items-center justify-between'
-                            >
-                                <a href="#">Vegetables And Fruits </a><MdArrowForwardIos />
-                            </div>
-                            {
-                                open3 &&
-                                <div className=' absolute -right-[240px] top-0 bg-white shadow w-60'>
-                                    <ul>
-                                        <li className='py-3 px-5 border-b'>Cross Body</li>
-                                        <li className='py-3 px-5 border-b'>Cross Body</li>
-                                        <li className='py-3 px-5 border-b'>Cross Body</li>
-                                    </ul>
-                                </div>
-                            }
-                        </div>
-                        <div className='py-3 px-5 border-b hover:text-[#7BAE00] transition-all duration-500'>
-                            <a href="#">Vegetables And Fruits </a>
-                        </div>
-                        <div className='py-3 px-5 border-b hover:text-[#7BAE00] transition-all duration-500'>
-                            <a href="#">Vegetables And Fruits </a>
-                        </div>
-                        <div className='py-3 px-5 border-b hover:text-[#7BAE00] transition-all duration-500'>
-                            <a href="#">Vegetables And Fruits </a>
-                        </div>
-                        <div className='py-3 px-5 border-b hover:text-[#7BAE00] transition-all duration-500'>
-                            <a href="#">Vegetables And Fruits </a>
-                        </div>
+                            )
+                        }
+
                     </div>
                 </div>
             </div>
