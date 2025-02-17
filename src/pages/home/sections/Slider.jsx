@@ -11,16 +11,15 @@ function Slider() {
     useEffect(() => {
         const interval = setInterval(() => {
             setIndex(prevIndex => (prevIndex + 1) % images.length);
-            setChanged(true)
         }, 3000);
 
         return () => clearInterval(interval);
     }, [images.length]);
 
     return (
-        <div className=' md:w-[75%] relative'>
+        <div className=' lg:w-[75%] relative'>
             <div>
-                <img src={images[index]} alt="" className={` w-[100%] h-[488px] rounded-xl`} />
+                <img src={images[index]} alt="" className={` w-[100%] lg:h-[488px] rounded-xl`} />
                 <div className=' absolute top-1/4 ps-10 text-white md:w-1/2 grid grid-cols-1 gap-7'>
                     <h2 className='text-4xl font-bold'>Fresh Food &amp; Healthly Organic Food</h2>
                     <p className=' text-xl font-semibold'>Free Shipping on all Your Order</p>

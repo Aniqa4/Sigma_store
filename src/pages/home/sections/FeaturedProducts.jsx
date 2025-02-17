@@ -6,7 +6,7 @@ function FeaturedProducts() {
     return (
         <div className='my-5'>
             <SectionTitle title={"Featured Products"} />
-            <div className='grid md:grid-cols-4 gap-5 py-5'>
+            <div className='lg:grid grid-cols-4 gap-5 py-5 flex overflow-x-auto flex-nowrap'>
                 <ProductCard />
                 <ProductCard />
                 <ProductCard />

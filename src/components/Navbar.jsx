@@ -18,38 +18,12 @@ function Navbar() {
 
   return (
     <div>
-      {/*------first layer-----*/}
-      {/* <div className='bg-[#262626] px-5 py-3 flex justify-between'>
-        <p className='text-2xl font-semibold text-white'>evanto
-          <span className='text-[#6f9a37] font-normal'>market</span></p>
-        <button className='text-white px-5 py-1 bg-[#6f9a37] rounded text-sm'>Buy now</button>
-      </div> */}
-      {/*------second layer-----*/}
-      {/* <div className=' py-2 bg-[#0B2B3C] border-t border-black'>
-        <div className='max-w-[65%] mx-auto flex justify-between text-white'>
-          <div className='flex gap-5'>
-            <p className='flex items-center'>
-              <span className='text-[#7BAE00] text-xl'><TiMail /></span>info12@example.com</p>
-            <p className=' flex items-center'>
-              <span className='text-[#7BAE00] text-xl'  ><VscLocation /></span>California, TX 70240</p>
-          </div>
-          <div className='flex items-center gap-5'>
-            <FaFacebookF />
-            <FaTwitter />
-            <FaInstagram />
-            <FaVimeoV />
-            <p className='ps-5 flex items-center gap-1'>English
-              <span className=' text-[#7BAE00] text-sm '><FaArrowDownLong /></span></p>
-          </div>
-        </div>
-      </div> */}
-      {/*------3rd layer-----*/}
       {
         showCart && <CartSidebar close={() => setShowCart(false)} />
       }
-      <div className='bg-[#FFFFFF] py-3 md:py-5'>
-        <div className='md:max-w-[65%] mx-auto grid grid-cols-1 gap-3 md:gap-5 justify-center md:flex md:justify-between'>
-          <div className='md:flex md:gap-28 md:items-center'>
+      <div className='bg-[#FFFFFF] py-3 lg:py-5'>
+        <div className='lg:max-w-[65%] mx-auto grid grid-cols-1 gap-3 lg:gap-5 justify-center lg:flex lg:justify-between'>
+          <div className='lg:flex lg:gap-28 lg:items-center'>
             <Link to={'/'}>
               <div className='uppercase flex justify-center'>
                 <span className='text-5xl'> <TiShoppingCart /></span>
@@ -59,7 +33,7 @@ function Navbar() {
                 </div>
               </div>
             </Link>
-            <ul className='hidden md:flex gap-5 font-semibold text-[16px]'>
+            <ul className='hidden lg:flex gap-5 font-semibold text-[16px]'>
               <li className='flex items-center'><Link to={'/'}>Home</Link> <span className='text-xl'><HiMiniPlusSmall /></span></li>
               <li className='flex items-center'>Page <span className='text-xl'><HiMiniPlusSmall /></span></li>
               <li className='flex items-center'><Link to={'/shop'}>Shop</Link> <span className='text-xl'><HiMiniPlusSmall /></span></li>

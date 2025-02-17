@@ -11,7 +11,7 @@ function CartSidebar({ close }) {
     return (
         <div onClick={handleOverlayClick}
             className=' bg-[#0000004c] h-screen z-20 fixed top-0 right-0 left-0 bottom-0'>
-            <div className='fixed right-0 bg-white bottom-0 top-0 w-[20%]'>
+            <div className='fixed right-0 bg-white bottom-0 top-0 lg:w-[20%]'>
                 <div className='text-xl p-5 border-b-2 uppercase font-semibold flex justify-between items-center'>
                     <h2 >Shopping cart</h2>
                     <span onClick={close} className=' transition-all hover:rotate-45 ease-in delay-500'>

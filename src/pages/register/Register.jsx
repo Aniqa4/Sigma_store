@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 function Register() {
     return (
         <div className='flex justify-center py-16'>
-            <div className='bg-white w-1/4 px-7 py-10 grid grid-cols-1 gap-5 text-center'>
+            <div className='bg-white lg:w-1/4 px-7 py-10 grid grid-cols-1 gap-5 text-center'>
                 <h1 className='text-[26px] font-bold'>Register Account</h1>
                 <div className='flex gap-2 justify-between text-white mb-5'>
                     <button className='bg-[#D04237] flex items-center justify-center font-bold gap-2 py-4 text-white w-1/2 rounded'>

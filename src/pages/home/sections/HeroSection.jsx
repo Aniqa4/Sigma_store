@@ -42,7 +42,7 @@ function HeroSection() {
 
     return (
         <div className=' pt-10 flex gap-7'>
-            <div className=' hidden md:block text-[16px] w-[25%] z-10'>
+            <div className=' hidden lg:block text-[16px] w-[25%] z-10'>
                 <h2 className=' bg-[#7BAE00] rounded-t px-5 py-2 text-white uppercase font-semibold'>All categories</h2>
                 <div>
                     <div className='bg-white rounded-b h-[450px]'>
@@ -54,7 +54,7 @@ function HeroSection() {
                                     onMouseLeave={() => setOpen(0)}>
                                     <div className='py-3 px-5 border-b hover:text-[#7BAE00] transition-all duration-500 flex items-center justify-between'
                                     >
-                                        <a href="#">{category.name}</a>{category?.subcategories.length > 0 && <MdArrowForwardIos />}
+                                        <a>{category.name}</a>{category?.subcategories.length > 0 && <MdArrowForwardIos />}
                                     </div>
                                     {
                                         open === category.id &&

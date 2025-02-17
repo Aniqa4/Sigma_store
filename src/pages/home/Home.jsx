@@ -14,23 +14,20 @@ import Reviews from './sections/Reviews'
 function Home() {
   return (
     <div>
-      <div className='md:max-w-[65%] md:mx-auto mx-3'>
+      <div className='lg:max-w-[65%] lg:mx-auto mx-3'>
         <HeroSection />
         <Features />
         <Banner2 />
         <PopularProducts />
-        <DealsHotOfTheDay />
+        {/* <DealsHotOfTheDay /> */}
         <ShopNow />
         <HotDeals />
         <FeaturedProducts />
       </div>
       <MakeACall />
-      <div className='md:max-w-[65%] md:mx-auto mx-3'>
-        {/*  <BlogsAndNews />
-        <Reviews/> */}
-        <FeaturedProducts />
-        <FeaturedProducts />
-        <FeaturedProducts />
+      <div className='lg:max-w-[65%] lg:mx-auto mx-3'>
+         <BlogsAndNews />
+        <Reviews/>
       </div>
     </div>
   )
